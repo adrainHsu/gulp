@@ -1,0 +1,468 @@
+/*adrain qq:583158795  xiaoyu_xu@epaybank.com */
+%yahei{
+  font-family:\5FAE\8F6F\96C5\9ED1,\9ED1\4F53,'Microsoft YaHei';
+}
+%songti{font-family:\5B8B\4F53,'SimSun';}
+%overflow{overflow: hidden;}
+%w100{width: 100%;}
+%img100{width: 100%;height:auto;}
+%fl{float:left;}
+%fr{float:right;}
+%displayblock{display: block;}
+%displaytable{display: inline-table;}
+%marin-auto{margin: auto;}
+%text-center{text-align:center;}
+%text-left{text-align:left;}
+%text-right{text-align:right;}
+.text-right{text-align:right;}
+%marin-auto{margin: auto;}
+
+.aabb{transform: rotate(45deg)}
+
+.fl{float:left;}
+.fr{float:right;}
+.yahei{@extend %yahei;}
+
+$blue:#0aa5f0;
+$wquanju:1100px;
+$red:#ff4141;
+$anhong:#D22331;
+$green:green;
+$cheng:#FE7500;
+$white:#ffffff;
+$danhui2:#cbcbcb;
+$danhui:#f0f0f0;
+$huif5:#f5f5f5;
+$huie:#eee;
+$huid:#ddd;
+$huic:#ccc;
+$hui0:#000;
+$hui3:#333;
+$hui6:#666;
+$hui9:#999;
+$huang:#ffea00;
+
+.clearfix:after {
+content: ""; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;
+}
+
+%bgContain{background-size:contain;}
+$mainColor:#ff5a37;
+i,em{font-style:normal;}
+
+
+.color-red{color:#000;}
+html{}
+body{max-width: 640px;min-width: 320px;margin: 0 auto;font-family:Helvetica,sans-serif;}
+
+//iphone下的按钮私有属性
+input {-webkit-appearance:none; /*去除input默认样式*/}
+//背景自适应
+
+
+
+//开始移动端页面
+.friend{width: 100%;height: auto;background: url("../img/activity/friend1@2x.png") top center no-repeat $mainColor;
+  @extend %bgContain;@extend %yahei;overflow: hidden;  
+  //标题图片
+  .friendTitImg{width:95%;height: auto;@extend %marin-auto;
+    img{@extend %img100;}
+  }
+  //内容背景
+  .friendBodyImg{width:98%;height: auto;@extend %marin-auto;margin-top:-13px;
+    position:relative;
+    img{@extend %img100;}
+    .friendBodyTit{position:absolute;top:7%;left:5px;font-size: 12px;color:#9b3723;}
+    //详细的
+    .friendBodyDetaile{position:absolute;top:7%;width:98%;text-align: center;
+        .p1{margin-top:5px;font-size: 1.0rem;}
+        .p2{font-size: 26px;margin-top: 5px;
+            em{font-size: 1.0rem;}
+        }        
+        dl.fBDetailDl{overflow:hidden;width: 85%;margin: 0 auto;font-size:0.8rem;margin-top: 5px;
+          dt,dd{float:left;}
+          dt{margin-left:5%;color:$hui6;}
+        }          
+    }
+     
+      
+  }
+  //去赎买
+  .friendgoBuy{width: 80%;display: block;height: auto;margin: 15px auto 0;
+    img{@extend %img100;}
+  }
+  //活动规则
+  .friendRule{position:relative;width: 100%;overflow: hidden;height:auto;padding-bottom:20px;padding-top:25px;
+    .fLine{height:1px;background:$huang;width: 100%;}
+    .friendRuleTit{position: absolute;left:50%;background:$mainColor;top:13px;font-size:1.0rem;padding:0 10px;
+        color: $huang;margin-left:-42px;
+    }
+    .friendRuleBody{width: 90%;margin: 15px auto 0;color: #822814;
+        p.fRBP{padding-left:15px;position: relative;margin-top:5px;
+           i{width: 10px;height: 10px;display: block;border-radius: 50%;background: #822814;
+              position: absolute;left:0;top:4px;
+           }
+        }
+    }
+    
+  }
+}
+//暂时详细的iphone5\or iphone4
+@media screen and(max-width: 374px) {
+  .friend{
+    .friendBodyImg{
+        .friendBodyDetaile{
+            .p1{font-size: 14px;margin-top:0px;}              
+            .p2{font-size: 20px;}
+            dl.fBDetailDl{font-size:12px;}         
+        } 
+    }    
+  }  
+}
+//暂时超过iphone6的
+@media screen and(min-width: 415px) and(max-width: 520px) {
+  .friend{
+    .friendBodyImg{
+        .friendBodyDetaile{
+            .p1{font-size: 20px;margin-top:0px;} 
+            .p2{font-size: 30px;}
+            dl.fBDetailDl{font-size:16px;}         
+        } 
+    }    
+  }  
+}
+@media screen and(min-width: 520px){
+    .friend{
+    .friendBodyImg{
+        .friendBodyDetaile{
+            .p1{font-size: 24px;margin-top:0px;} 
+            .p2{font-size: 50px;}
+            dl.fBDetailDl{font-size:18px;
+                dt{margin-left:10%;}
+            }         
+        } 
+    }    
+  } 
+}
+//弹层
+.black_overlay{display: none;width: 100%;height: 100%;position: fixed;top:0;left:0;background: rgba(0,0,0,0.7);z-index: 99;}
+//好友邀请参加注册
+.index-white-content{width: 80%;margin-left:-40%;position: fixed;top:0;left:50%;z-index: 100;overflow: hidden;display: none;
+    
+}
+//注册框
+ul.helpLoginUL,ul.regNewUL{
+    margin:30px 12px 20px;
+    li{margin-bottom: 10px;height: 40px;position: relative;
+        //错误提示
+        .errorPrompt{position: absolute;bottom:-2px;left:2px;color:red;
+            font-size:12px;
+            text-indent: 5px;
+        }
+        //手机图标iconPhone
+        .iconPhone{display: block;width: 14px;height: 19px;background: url(../img/activity/icon-phone@2x.png) no-repeat;
+            background-size: 100%;position: absolute;left:5px;top:8px;
+        }
+        //第一个请输入手机号
+        input.inputPhone{text-indent: 20px;}
+        &.li1{
+            .errorPrompt{text-indent: 20px;}
+        }
+        
+        input.initial{height:38px;line-height: 38px;font-size: 14px;box-sizing:border-box;}
+        input[type$="checkbox"]{vertical-align: middle;margin-right:3px;}
+        .btn.btn-obtain{background: #ffbe00;color: $white;width:45%;padding: 0;height: 36px;line-height: 36px;
+            box-shadow: 0 2px 0 #e69114;
+        }
+        .verifica{width: 50%;text-align: center;}
+        .w5per{width: 4%;float:left;height:38px;}
+        img.imgCode{width:45%;height:38px;border: none;}
+        .btn.btn-blue{padding-top:0;}
+        &.protocolLI{font-size:12px;height:20px;white-space: nowrap;text-overflow:ellipsis;overflow: hidden;
+            a{color: $blue;}
+        }
+        
+    }
+}
+.helpFrind{position: relative;overflow: hidden;
+    .helpFrindTit{position: absolute;top:0;left:0;
+        img{@extend %img100;}
+    }
+    .helpFrindBody{background: $white;border-radius: 10px;margin-top:20px;overflow: hidden;
+        
+    } 
+    //残忍的拒绝
+    .refuse{color:$white;text-align: center;
+        .refusePic{display:inline-block;width: 60px;height:60px;background:url(../img/activity/refuse@2x.png) no-repeat;background-size: 100%;
+            margin-top:35px;
+        }
+        
+    }   
+}
+//暂时弹层的文字和下面的列表重合
+@media screen and(min-width: 530px) {
+  .helpFrind{
+    .helpFrindBody{
+        ul.helpLoginUL{margin-top:50px;}
+    }    
+  }  
+}
+//注册成功或失败
+.regPo{position: relative;overflow: hidden;padding:30px 0;
+    &.success{
+        .regPoTit{background:url(../img/activity/regPSuccess@2x.png) no-repeat;background-size: 100%;}
+        .prompt{color:#ff5a5a;}
+        .btn{width: 60%;}
+    }
+    &.fail{
+        .regPoTit{background:url(../img/activity/regPFail@2x.png) no-repeat;background-size: 100%;}
+        .prompt{color:$hui6;}
+        .btn{margin:0 5px;width: 40%;}        
+    }
+    .regPoTit{width: 70px;height:70px;border-radius: 50%;border:10px solid $white;
+       position: absolute;top:0;left:50%;margin-left:-45px;       
+    }
+    .regPoBody{background: $white;border-radius: 6px;overflow: hidden;text-align: center;
+        .prompt{position: absolute;left:0;text-align: center;width: 100%;top:75px;
+            font-size: 24px;
+        }
+        .explain{color: $hui6;font-size:14px;margin-top:80px;height:35px;}
+        .regPoBtn{margin-bottom:20px;
+            .btn{height: 45px;line-height: 45px;padding:0;border-radius: 3px;font-size:18px;}            
+        }
+    }
+}
+//初如化input
+input.initial{border: 1px $huid solid;width:100% ;}
+input[type$="button"]:focus{outline: none;}
+
+//1000G流量免费送
+$flowBg:#ea5750;
+.flow{background:$flowBg;@extend %yahei;
+    .flowTit{position: relative;padding-bottom:5px;
+        img{@extend %img100;}
+        .flowTitCon{position: absolute;bottom:5px;text-align: center;width: 100%;color:$white;font-size:1.0rem;
+            span{color: $huang;font-size:1.2rem;}
+        }
+    }
+    //
+    .flowTitS{overflow: hidden;
+        .flowTitBtn{display: block;width: 40%;margin: 5px auto;
+            img{@extend %img100;box-shadow:  0px 0px 8px #a30700;}
+        }
+        .flowTitSText{text-align: center;color: $white;margin-bottom: 15px;font-size:12px;}
+    }
+  //送流量说明
+  .flowSend{background:#fccd1f;overflow: hidden;
+    .roundTit{width:60%;height:30px;line-height:30px;
+        margin:25px auto 0;text-align: center;
+        background: $white;color:$mainColor;
+        border-radius: 10px;
+        position: relative;
+        border:2px solid $mainColor;
+        text-indent: 17px;
+        .roundTitRound{text-indent: 0px;
+            width: 34px;height:34px;line-height: 34px;
+            border-radius: 50%;
+            background:$mainColor;color:$white;
+            position:absolute;top:-2px;left:-10px;
+        }
+    }
+    //送流量里面的列表
+    .flowSendUL{margin:15px;
+        li{margin-top:20px;
+            h3{background:$white;text-indent: 15px;
+                height: 36px;line-height: 36px;color:$hui3;
+                font-size:1.0rem;
+            }
+            .flowSendB{background: #ffeead;padding:10px 0;
+                dl{
+                    &.dl1,&.dl2,&.dl3,&.dlbuy{overflow: hidden;
+                        vertical-align:top;
+                        text-indent: 15px;
+                        display: inline-block;
+                    }
+                    &.dl1,&.dl2,&.dl3{width: 24%;
+                        dt{font-size:12px;font-style: normal;}
+                        dd{font-size:14px;
+                            span{font-size:30px;color:$mainColor;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                    &.dl3{width:44%; }
+                    &.dlbuy{width: 44%;text-indent: 0;                        
+                        dt{text-align: center;border:1px solid #e3b300;
+                            color:darken(#e3b300,10%);padding:1px 0;
+                            border-radius: 13px;
+                        }
+                        dd{text-align: center;margin-top:8px;
+                            .btn.btn-red{width:80%;margin: 0 auto;
+                               padding: 2px 0;font-size:16px;
+                               border-bottom:3px #be0900 solid;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    //roundTit2Explain
+    .roundTit2Explain{text-align: center;
+        font-size:1.0rem;margin:15px auto 25px;
+      &.tastRoundTit2Explain{
+        font-size:0.8rem;
+        span.money{font-size:1.8rem;color:$mainColor;font-weight: bold;}
+      }
+    }    
+  }
+}
+//通用活动规则
+.activityRule{background: #ffe38e;padding:20px;
+    h3{font-size:1.2rem;color:#ea5750;font-weight: bold;}
+    p{margin-top:3px;padding-left:13px;position: relative;
+        i{width:8px;height: 8px;display: block;
+            background:#ea5750;border-radius: 50%;
+            position:absolute;left:0;top:6px;
+        }
+    } 
+}
+//通用联系我们及版权声明
+.contact{background: #ffe38e;padding:20px;text-align: center;
+    h3{font-size:1.2rem;color:#ea5750;font-weight: bold;}
+    p{margin-top:10px;}
+}
+//通用用户注册弹层
+.regNew{overflow:hidden;@extend %yahei;border-radius: 10px;
+    .regNewTit{height:40px;line-height: 40px;color:$white;
+        position: relative;
+        background:$blue;font-size:16px;text-align: center;
+        .iconClose{width: 16px;height:16px;cursor: pointer;
+            background: url(../img/flow/close@2x.png) no-repeat;
+            background-size:100%;display: block;
+            position: absolute;top:50%;margin-top:-8px;right:15px;
+            opacity:0.5;
+        }
+    }
+    .regNewBody{background:$white;overflow:hidden;
+        //奇葩说的页面提示
+        &.regNewBodyWeiro{
+          ul.regNewUL{margin-top:5px;}
+        }
+       .weirdoPopupT{text-align: center;margin-top:5px;}
+    }    
+}
+//你的好友获得的理财为
+.tastFrind{overflow:hidden;text-align: center;
+  .headImg{width: 40%;height: 40%;margin: 20px auto 0;
+    img{@extend %img100;border-radius:50%;border:3px $white solid;}
+  }
+  .tastFrindName{color:$huang;
+    font-size:1.4rem;
+  }
+  .tastFrindExplain{color:$white;font-size:14px;}
+  .tastFrindExplainCon{width: 50%;margin:10px auto 20px;
+    height:50px;line-height: 50px;
+    border:2px solid lighten($mainColor,10%);
+    background:darken($mainColor,25%);
+    border-radius: 20px;color:$huang;
+    font-size:40px;
+    em{font-size:0.8rem;}
+  }
+  .tastFrMyBtn{display: block;margin: 20px auto;width: 50%;
+    box-shadow:  0 0 5px darken($mainColor,30%);padding:0;
+    cursor: pointer;
+    img{@extend %img100;display:block;}
+  }
+}
+//奇葩说最奇葩
+.weirdo{overflow:hidden;text-align: center;
+  .weirdoTit{
+    img{@extend %img100;}
+  }
+  .weirdoBody{
+    .weirdoBodyTit{width: 75%;margin:10px auto 0;
+      img{@extend %img100;}
+    }
+  }
+}
+//奇葩说的人物展示
+ul.weirdoBodyUL{overflow: hidden;margin: 10px auto;
+  li{float:left;width: 33%;margin-bottom:25px;
+    .weirdoInfoCon{width: 90%;margin: 0 auto;
+      img.WHead{width: 80%;border-radius: 50%;border:#fd76cb 2px solid;
+        display: block;margin: 0 auto;
+      }
+      .weirdoNameTick{position: relative;
+        margin-top:-13px;
+        width: 100%;color:$white;
+        span{color:$huang;}
+        img{@extend %img100;display: block;}
+        .weirdoNameTText{position: absolute;width: 100%;
+          text-align: center;top:50%;font-size: 12px;
+          margin-top:-10px;
+        }
+      }
+      .weirdoNameTickB{margin-bottom: 10px;
+        width: 100%;
+        img{@extend %img100;display: block;}
+      }
+      .btn.btn-vote{padding:3px 0;width: 65%;}
+    }
+  }
+}
+//奇葩说的活动说明
+.weirdoAcRule{text-align: left;color:$white;
+  margin:10px;font-size:12px;
+  h3{font-size:1.2rem;color:$huang;font-weight: bold;}
+  p{margin-top:5px;position: relative;}
+}
+//投票的黄色按钮
+.btn.btn-vote{background:$huang;color:$mainColor;}
+//为TA拉票
+.weirdo.weirdoCanvass{
+  .perfectTit{color:$white;font-size: 1.4rem;margin-top:30px;}
+  .perfectPassT{color:$white;font-size: 1.0rem;margin:0 20px;}
+  ul.weirdoBodyUL{margin-top:20px;
+    li{width: 60%;float:none;margin: auto;
+      .weirdoNameTText{font-size: 14px;}
+      .btn.btn-vote{padding:5px 0;width: 75%;font-size: 1.2rem;
+        margin-top:20px ;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

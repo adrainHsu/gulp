@@ -37,6 +37,6 @@ $ npm install gulp-clean
 $ npm install gulp-cache
 $ npm install gulp-notify
 ------------------------------------------
-当然也可以()：
+当然也可以：
 $ npm install
 ------------------------------------------

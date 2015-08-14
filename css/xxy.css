@@ -1,0 +1,640 @@
+@charset "UTF-8";
+/*adrain qq:583158795  xiaoyu_xu@epaybank.com */
+.yahei, .friend, .flow, .regNew {
+  font-family: \5FAE\8F6F\96C5\9ED1,\9ED1\4F53,'Microsoft YaHei'; }
+
+.friend .friendTitImg img, .friend .friendBodyImg img, .friend .friendgoBuy img, .helpFrind .helpFrindTit img, .flow .flowTit img, .flow .flowTitS .flowTitBtn img, .tastFrind .headImg img, .tastFrind .tastFrMyBtn img, .weirdo .weirdoTit img, .weirdo .weirdoBody .weirdoBodyTit img, ul.weirdoBodyUL li .weirdoInfoCon .weirdoNameTick img, ul.weirdoBodyUL li .weirdoInfoCon .weirdoNameTickB img {
+  width: 100%;
+  height: auto; }
+
+.friend .friendTitImg, .friend .friendBodyImg {
+  margin: auto; }
+
+.text-right {
+  text-align: right; }
+
+.friend .friendTitImg, .friend .friendBodyImg {
+  margin: auto; }
+
+.aabb {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.friend {
+  background-size: contain; }
+
+i, em {
+  font-style: normal; }
+
+.color-red {
+  color: yellow; }
+
+body {
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: Helvetica,sans-serif; }
+
+input {
+  -webkit-appearance: none;
+  /*去除input默认样式*/ }
+
+.friend {
+  width: 100%;
+  height: auto;
+  background: url("../img/activity/friend1@2x.png") top center no-repeat #ff5a37;
+  overflow: hidden; }
+  .friend .friendTitImg {
+    width: 95%;
+    height: auto; }
+  .friend .friendBodyImg {
+    width: 98%;
+    height: auto;
+    margin-top: -13px;
+    position: relative; }
+    .friend .friendBodyImg .friendBodyTit {
+      position: absolute;
+      top: 7%;
+      left: 5px;
+      font-size: 12px;
+      color: #9b3723; }
+    .friend .friendBodyImg .friendBodyDetaile {
+      position: absolute;
+      top: 7%;
+      width: 98%;
+      text-align: center; }
+      .friend .friendBodyImg .friendBodyDetaile .p1 {
+        margin-top: 5px;
+        font-size: 1.0rem; }
+      .friend .friendBodyImg .friendBodyDetaile .p2 {
+        font-size: 26px;
+        margin-top: 5px; }
+        .friend .friendBodyImg .friendBodyDetaile .p2 em {
+          font-size: 1.0rem; }
+      .friend .friendBodyImg .friendBodyDetaile dl.fBDetailDl {
+        overflow: hidden;
+        width: 85%;
+        margin: 0 auto;
+        font-size: 0.8rem;
+        margin-top: 5px; }
+        .friend .friendBodyImg .friendBodyDetaile dl.fBDetailDl dt, .friend .friendBodyImg .friendBodyDetaile dl.fBDetailDl dd {
+          float: left; }
+        .friend .friendBodyImg .friendBodyDetaile dl.fBDetailDl dt {
+          margin-left: 5%;
+          color: #666; }
+  .friend .friendgoBuy {
+    width: 80%;
+    display: block;
+    height: auto;
+    margin: 15px auto 0; }
+  .friend .friendRule {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 25px; }
+    .friend .friendRule .fLine {
+      height: 1px;
+      background: #ffea00;
+      width: 100%; }
+    .friend .friendRule .friendRuleTit {
+      position: absolute;
+      left: 50%;
+      background: #ff5a37;
+      top: 13px;
+      font-size: 1.0rem;
+      padding: 0 10px;
+      color: #ffea00;
+      margin-left: -42px; }
+    .friend .friendRule .friendRuleBody {
+      width: 90%;
+      margin: 15px auto 0;
+      color: #822814; }
+      .friend .friendRule .friendRuleBody p.fRBP {
+        padding-left: 15px;
+        position: relative;
+        margin-top: 5px; }
+        .friend .friendRule .friendRuleBody p.fRBP i {
+          width: 10px;
+          height: 10px;
+          display: block;
+          border-radius: 50%;
+          background: #822814;
+          position: absolute;
+          left: 0;
+          top: 4px; }
+
+@media screen and (max-width: 374px) {
+  .friend .friendBodyImg .friendBodyDetaile .p1 {
+    font-size: 14px;
+    margin-top: 0px; }
+  .friend .friendBodyImg .friendBodyDetaile .p2 {
+    font-size: 20px; }
+  .friend .friendBodyImg .friendBodyDetaile dl.fBDetailDl {
+    font-size: 12px; } }
+@media screen and (min-width: 415px) and (max-width: 520px) {
+  .friend .friendBodyImg .friendBodyDetaile .p1 {
+    font-size: 20px;
+    margin-top: 0px; }
+  .friend .friendBodyImg .friendBodyDetaile .p2 {
+    font-size: 30px; }
+  .friend .friendBodyImg .friendBodyDetaile dl.fBDetailDl {
+    font-size: 16px; } }
+@media screen and (min-width: 520px) {
+  .friend .friendBodyImg .friendBodyDetaile .p1 {
+    font-size: 24px;
+    margin-top: 0px; }
+  .friend .friendBodyImg .friendBodyDetaile .p2 {
+    font-size: 50px; }
+  .friend .friendBodyImg .friendBodyDetaile dl.fBDetailDl {
+    font-size: 18px; }
+    .friend .friendBodyImg .friendBodyDetaile dl.fBDetailDl dt {
+      margin-left: 10%; } }
+.black_overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 99; }
+
+.index-white-content {
+  width: 80%;
+  margin-left: -40%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 100;
+  overflow: hidden;
+  display: none; }
+
+ul.helpLoginUL, ul.regNewUL {
+  margin: 30px 12px 20px; }
+  ul.helpLoginUL li, ul.regNewUL li {
+    margin-bottom: 10px;
+    height: 40px;
+    position: relative; }
+    ul.helpLoginUL li .errorPrompt, ul.regNewUL li .errorPrompt {
+      position: absolute;
+      bottom: -2px;
+      left: 2px;
+      color: red;
+      font-size: 12px;
+      text-indent: 5px; }
+    ul.helpLoginUL li .iconPhone, ul.regNewUL li .iconPhone {
+      display: block;
+      width: 14px;
+      height: 19px;
+      background: url(../img/activity/icon-phone@2x.png) no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 5px;
+      top: 8px; }
+    ul.helpLoginUL li input.inputPhone, ul.regNewUL li input.inputPhone {
+      text-indent: 20px; }
+    ul.helpLoginUL li.li1 .errorPrompt, ul.regNewUL li.li1 .errorPrompt {
+      text-indent: 20px; }
+    ul.helpLoginUL li input.initial, ul.regNewUL li input.initial {
+      height: 38px;
+      line-height: 38px;
+      font-size: 14px;
+      box-sizing: border-box; }
+    ul.helpLoginUL li input[type$="checkbox"], ul.regNewUL li input[type$="checkbox"] {
+      vertical-align: middle;
+      margin-right: 3px; }
+    ul.helpLoginUL li .btn.btn-obtain, ul.regNewUL li .btn.btn-obtain {
+      background: #ffbe00;
+      color: #ffffff;
+      width: 45%;
+      padding: 0;
+      height: 36px;
+      line-height: 36px;
+      box-shadow: 0 2px 0 #e69114; }
+    ul.helpLoginUL li .verifica, ul.regNewUL li .verifica {
+      width: 50%;
+      text-align: center; }
+    ul.helpLoginUL li .w5per, ul.regNewUL li .w5per {
+      width: 4%;
+      float: left;
+      height: 38px; }
+    ul.helpLoginUL li img.imgCode, ul.regNewUL li img.imgCode {
+      width: 45%;
+      height: 38px;
+      border: none; }
+    ul.helpLoginUL li .btn.btn-blue, ul.regNewUL li .btn.btn-blue {
+      padding-top: 0; }
+    ul.helpLoginUL li.protocolLI, ul.regNewUL li.protocolLI {
+      font-size: 12px;
+      height: 20px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; }
+      ul.helpLoginUL li.protocolLI a, ul.regNewUL li.protocolLI a {
+        color: #0aa5f0; }
+
+.helpFrind {
+  position: relative;
+  overflow: hidden; }
+  .helpFrind .helpFrindTit {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .helpFrind .helpFrindBody {
+    background: #ffffff;
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow: hidden; }
+  .helpFrind .refuse {
+    color: #ffffff;
+    text-align: center; }
+    .helpFrind .refuse .refusePic {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      background: url(../img/activity/refuse@2x.png) no-repeat;
+      background-size: 100%;
+      margin-top: 35px; }
+
+@media screen and (min-width: 530px) {
+  .helpFrind .helpFrindBody ul.helpLoginUL {
+    margin-top: 50px; } }
+.regPo {
+  position: relative;
+  overflow: hidden;
+  padding: 30px 0; }
+  .regPo.success .regPoTit {
+    background: url(../img/activity/regPSuccess@2x.png) no-repeat;
+    background-size: 100%; }
+  .regPo.success .prompt {
+    color: #ff5a5a; }
+  .regPo.success .btn {
+    width: 60%; }
+  .regPo.fail .regPoTit {
+    background: url(../img/activity/regPFail@2x.png) no-repeat;
+    background-size: 100%; }
+  .regPo.fail .prompt {
+    color: #666; }
+  .regPo.fail .btn {
+    margin: 0 5px;
+    width: 40%; }
+  .regPo .regPoTit {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 10px solid #ffffff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -45px; }
+  .regPo .regPoBody {
+    background: #ffffff;
+    border-radius: 6px;
+    overflow: hidden;
+    text-align: center; }
+    .regPo .regPoBody .prompt {
+      position: absolute;
+      left: 0;
+      text-align: center;
+      width: 100%;
+      top: 75px;
+      font-size: 24px; }
+    .regPo .regPoBody .explain {
+      color: #666;
+      font-size: 14px;
+      margin-top: 80px;
+      height: 35px; }
+    .regPo .regPoBody .regPoBtn {
+      margin-bottom: 20px; }
+      .regPo .regPoBody .regPoBtn .btn {
+        height: 45px;
+        line-height: 45px;
+        padding: 0;
+        border-radius: 3px;
+        font-size: 18px; }
+
+input.initial {
+  border: 1px #ddd solid;
+  width: 100%; }
+
+input[type$="button"]:focus {
+  outline: none; }
+
+.flow {
+  background: #ea5750; }
+  .flow .flowTit {
+    position: relative;
+    padding-bottom: 5px; }
+    .flow .flowTit .flowTitCon {
+      position: absolute;
+      bottom: 5px;
+      text-align: center;
+      width: 100%;
+      color: #ffffff;
+      font-size: 1.0rem; }
+      .flow .flowTit .flowTitCon span {
+        color: #ffea00;
+        font-size: 1.2rem; }
+  .flow .flowTitS {
+    overflow: hidden; }
+    .flow .flowTitS .flowTitBtn {
+      display: block;
+      width: 40%;
+      margin: 5px auto; }
+      .flow .flowTitS .flowTitBtn img {
+        box-shadow: 0px 0px 8px #a30700; }
+    .flow .flowTitS .flowTitSText {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 15px;
+      font-size: 12px; }
+  .flow .flowSend {
+    background: #fccd1f;
+    overflow: hidden; }
+    .flow .flowSend .roundTit {
+      width: 60%;
+      height: 30px;
+      line-height: 30px;
+      margin: 25px auto 0;
+      text-align: center;
+      background: #ffffff;
+      color: #ff5a37;
+      border-radius: 10px;
+      position: relative;
+      border: 2px solid #ff5a37;
+      text-indent: 17px; }
+      .flow .flowSend .roundTit .roundTitRound {
+        text-indent: 0px;
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
+        border-radius: 50%;
+        background: #ff5a37;
+        color: #ffffff;
+        position: absolute;
+        top: -2px;
+        left: -10px; }
+    .flow .flowSend .flowSendUL {
+      margin: 15px; }
+      .flow .flowSend .flowSendUL li {
+        margin-top: 20px; }
+        .flow .flowSend .flowSendUL li h3 {
+          background: #ffffff;
+          text-indent: 15px;
+          height: 36px;
+          line-height: 36px;
+          color: #333;
+          font-size: 1.0rem; }
+        .flow .flowSend .flowSendUL li .flowSendB {
+          background: #ffeead;
+          padding: 10px 0; }
+          .flow .flowSend .flowSendUL li .flowSendB dl.dl1, .flow .flowSend .flowSendUL li .flowSendB dl.dl2, .flow .flowSend .flowSendUL li .flowSendB dl.dl3, .flow .flowSend .flowSendUL li .flowSendB dl.dlbuy {
+            overflow: hidden;
+            vertical-align: top;
+            text-indent: 15px;
+            display: inline-block; }
+          .flow .flowSend .flowSendUL li .flowSendB dl.dl1, .flow .flowSend .flowSendUL li .flowSendB dl.dl2, .flow .flowSend .flowSendUL li .flowSendB dl.dl3 {
+            width: 24%; }
+            .flow .flowSend .flowSendUL li .flowSendB dl.dl1 dt, .flow .flowSend .flowSendUL li .flowSendB dl.dl2 dt, .flow .flowSend .flowSendUL li .flowSendB dl.dl3 dt {
+              font-size: 12px;
+              font-style: normal; }
+            .flow .flowSend .flowSendUL li .flowSendB dl.dl1 dd, .flow .flowSend .flowSendUL li .flowSendB dl.dl2 dd, .flow .flowSend .flowSendUL li .flowSendB dl.dl3 dd {
+              font-size: 14px; }
+              .flow .flowSend .flowSendUL li .flowSendB dl.dl1 dd span, .flow .flowSend .flowSendUL li .flowSendB dl.dl2 dd span, .flow .flowSend .flowSendUL li .flowSendB dl.dl3 dd span {
+                font-size: 30px;
+                color: #ff5a37;
+                font-weight: bold; }
+          .flow .flowSend .flowSendUL li .flowSendB dl.dl3 {
+            width: 44%; }
+          .flow .flowSend .flowSendUL li .flowSendB dl.dlbuy {
+            width: 44%;
+            text-indent: 0; }
+            .flow .flowSend .flowSendUL li .flowSendB dl.dlbuy dt {
+              text-align: center;
+              border: 1px solid #e3b300;
+              color: #b08b00;
+              padding: 1px 0;
+              border-radius: 13px; }
+            .flow .flowSend .flowSendUL li .flowSendB dl.dlbuy dd {
+              text-align: center;
+              margin-top: 8px; }
+              .flow .flowSend .flowSendUL li .flowSendB dl.dlbuy dd .btn.btn-red {
+                width: 80%;
+                margin: 0 auto;
+                padding: 2px 0;
+                font-size: 16px;
+                border-bottom: 3px #be0900 solid; }
+    .flow .flowSend .roundTit2Explain {
+      text-align: center;
+      font-size: 1.0rem;
+      margin: 15px auto 25px; }
+      .flow .flowSend .roundTit2Explain.tastRoundTit2Explain {
+        font-size: 0.8rem; }
+        .flow .flowSend .roundTit2Explain.tastRoundTit2Explain span.money {
+          font-size: 1.8rem;
+          color: #ff5a37;
+          font-weight: bold; }
+
+.activityRule {
+  background: #ffe38e;
+  padding: 20px; }
+  .activityRule h3 {
+    font-size: 1.2rem;
+    color: #ea5750;
+    font-weight: bold; }
+  .activityRule p {
+    margin-top: 3px;
+    padding-left: 13px;
+    position: relative; }
+    .activityRule p i {
+      width: 8px;
+      height: 8px;
+      display: block;
+      background: #ea5750;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 6px; }
+
+.contact {
+  background: #ffe38e;
+  padding: 20px;
+  text-align: center; }
+  .contact h3 {
+    font-size: 1.2rem;
+    color: #ea5750;
+    font-weight: bold; }
+  .contact p {
+    margin-top: 10px; }
+
+.regNew {
+  overflow: hidden;
+  border-radius: 10px; }
+  .regNew .regNewTit {
+    height: 40px;
+    line-height: 40px;
+    color: #ffffff;
+    position: relative;
+    background: #0aa5f0;
+    font-size: 16px;
+    text-align: center; }
+    .regNew .regNewTit .iconClose {
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+      background: url(../img/flow/close@2x.png) no-repeat;
+      background-size: 100%;
+      display: block;
+      position: absolute;
+      top: 50%;
+      margin-top: -8px;
+      right: 15px;
+      opacity: 0.5; }
+  .regNew .regNewBody {
+    background: #ffffff;
+    overflow: hidden; }
+    .regNew .regNewBody.regNewBodyWeiro ul.regNewUL {
+      margin-top: 5px; }
+    .regNew .regNewBody .weirdoPopupT {
+      text-align: center;
+      margin-top: 5px; }
+
+.tastFrind {
+  overflow: hidden;
+  text-align: center; }
+  .tastFrind .headImg {
+    width: 40%;
+    height: 40%;
+    margin: 20px auto 0; }
+    .tastFrind .headImg img {
+      border-radius: 50%;
+      border: 3px #ffffff solid; }
+  .tastFrind .tastFrindName {
+    color: #ffea00;
+    font-size: 1.4rem; }
+  .tastFrind .tastFrindExplain {
+    color: #ffffff;
+    font-size: 14px; }
+  .tastFrind .tastFrindExplainCon {
+    width: 50%;
+    margin: 10px auto 20px;
+    height: 50px;
+    line-height: 50px;
+    border: 2px solid #ff846a;
+    background: #b72000;
+    border-radius: 20px;
+    color: #ffea00;
+    font-size: 40px; }
+    .tastFrind .tastFrindExplainCon em {
+      font-size: 0.8rem; }
+  .tastFrind .tastFrMyBtn {
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+    box-shadow: 0 0 5px #9d1b00;
+    padding: 0;
+    cursor: pointer; }
+    .tastFrind .tastFrMyBtn img {
+      display: block; }
+
+.weirdo {
+  overflow: hidden;
+  text-align: center; }
+  .weirdo .weirdoBody .weirdoBodyTit {
+    width: 75%;
+    margin: 10px auto 0; }
+
+ul.weirdoBodyUL {
+  overflow: hidden;
+  margin: 10px auto; }
+  ul.weirdoBodyUL li {
+    float: left;
+    width: 33%;
+    margin-bottom: 25px; }
+    ul.weirdoBodyUL li .weirdoInfoCon {
+      width: 90%;
+      margin: 0 auto; }
+      ul.weirdoBodyUL li .weirdoInfoCon img.WHead {
+        width: 80%;
+        border-radius: 50%;
+        border: #fd76cb 2px solid;
+        display: block;
+        margin: 0 auto; }
+      ul.weirdoBodyUL li .weirdoInfoCon .weirdoNameTick {
+        position: relative;
+        margin-top: -13px;
+        width: 100%;
+        color: #ffffff; }
+        ul.weirdoBodyUL li .weirdoInfoCon .weirdoNameTick span {
+          color: #ffea00; }
+        ul.weirdoBodyUL li .weirdoInfoCon .weirdoNameTick img {
+          display: block; }
+        ul.weirdoBodyUL li .weirdoInfoCon .weirdoNameTick .weirdoNameTText {
+          position: absolute;
+          width: 100%;
+          text-align: center;
+          top: 50%;
+          font-size: 12px;
+          margin-top: -10px; }
+      ul.weirdoBodyUL li .weirdoInfoCon .weirdoNameTickB {
+        margin-bottom: 10px;
+        width: 100%; }
+        ul.weirdoBodyUL li .weirdoInfoCon .weirdoNameTickB img {
+          display: block; }
+      ul.weirdoBodyUL li .weirdoInfoCon .btn.btn-vote {
+        padding: 3px 0;
+        width: 65%; }
+
+.weirdoAcRule {
+  text-align: left;
+  color: #ffffff;
+  margin: 10px;
+  font-size: 12px; }
+  .weirdoAcRule h3 {
+    font-size: 1.2rem;
+    color: #ffea00;
+    font-weight: bold; }
+  .weirdoAcRule p {
+    margin-top: 5px;
+    position: relative; }
+
+.btn.btn-vote {
+  background: #ffea00;
+  color: #ff5a37; }
+
+.weirdo.weirdoCanvass .perfectTit {
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin-top: 30px; }
+.weirdo.weirdoCanvass .perfectPassT {
+  color: #ffffff;
+  font-size: 1.0rem;
+  margin: 0 20px; }
+.weirdo.weirdoCanvass ul.weirdoBodyUL {
+  margin-top: 20px; }
+  .weirdo.weirdoCanvass ul.weirdoBodyUL li {
+    width: 60%;
+    float: none;
+    margin: auto; }
+    .weirdo.weirdoCanvass ul.weirdoBodyUL li .weirdoNameTText {
+      font-size: 14px; }
+    .weirdo.weirdoCanvass ul.weirdoBodyUL li .btn.btn-vote {
+      padding: 5px 0;
+      width: 75%;
+      font-size: 1.2rem;
+      margin-top: 20px; }
